@@ -1,0 +1,101 @@
+.main_headr{
+    text-align: center;
+    color: #0f6479;
+    font-size: 1.8em;
+}
+
+.about_text_cont{
+    display: flex;
+    padding: 0.5% 1em 0.5% 1em;
+    margin: 1.5em 0 0em 0;
+   
+}
+.about_text_cont p{
+    font-size: 1em;
+    font-weight: 500;
+    color: #02113f;
+    margin: 0 1em 0 0;
+    text-align: center;
+}
+
+.vision_cont{
+    width: 100%;
+    display: inline-flex;
+    background-color: #052e55a4;
+    margin: 2em 0 3em 0;
+    color: #fff;
+    
+}
+
+.vision_txt_cont{
+    width: 78%;
+    padding: 0 0 0 1%;
+}
+
+.vision_txt_cont p{
+    font-size: 1em;
+}
+
+.about_top_half {
+    padding-top: 3em;
+    background-color: white;
+    text-align: center;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.top_image_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5em;
+}
+
+.top_image_container > div > img {
+    width: 100%;
+    height: 30vw;
+    object-fit: contain;
+}
+
+.team_container {
+    color: white;
+    width: 100%;
+    display: inline-flex;
+    margin: 3em 0 0 0;
+    padding: 3em 0 3em 0;
+    background-color: #232324e8;
+    justify-content: space-around;
+}
+
+.team_member > img {
+    width: 15em;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.support {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    /* background-color: red; */
+}
+
+.support > h3 {
+    font-weight: 400;
+}
+
+.support > h3 > span {
+    cursor: pointer;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    padding: 0.5em 3em 0.5em 3em;
+    border-radius: 5px; 
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.support > h3 > span:hover {
+    color: green;
+    background-color: white;
+}

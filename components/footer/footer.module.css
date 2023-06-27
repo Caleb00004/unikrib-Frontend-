@@ -1,0 +1,47 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.topHalf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topHalf p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.topHalf p > svg {
+    margin-right: 0.3em;
+}
+
+.topHalf p:hover {
+    color: rgb(2, 99, 255);
+}
+
+.footer hr {
+    margin: 3em 5em 3em 5em;
+}
+
+.bottomHalf {
+    display: flex;
+    /* background-color: red; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.bottomHalf > svg {
+    cursor: pointer;
+}
+
+.bottomHalf > svg:hover {
+    color: rgb(2, 99, 255);
+}

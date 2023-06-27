@@ -1,0 +1,49 @@
+
+.container {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_item {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.container button {
+    flex: 1;
+    background-color: green;
+    color: white;
+    border: none;
+    /* height: 40%; */
+    padding: 0.6em 3em 0.6em 3em;
+}
+
+.topHalf {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottomHalf {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texts {
+    flex: 4;
+}
+
+.showing_results {
+    background-color: rgb(104, 103, 103);
+    text-align: left;
+    color: white;
+    padding-left: 3em;
+    padding: 0.5em 3em 0.5em 3em;
+    margin-top: 2em;
+}
+
+
+

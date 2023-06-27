@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.img_container {
+    padding-left: 2em;
+    cursor: pointer;
+}
+
+.nav_contents {
+    display: flex;
+    /* width: 35%; */
+    width: 35em;
+    justify-content: space-between;
+    padding-right: 2em;
+}
+
+.nav_contents > p {
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.3em;
+}
+
+.nav_contents > p:hover {
+    border-bottom-color: white;
+}
