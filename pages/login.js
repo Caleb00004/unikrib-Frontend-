@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
 import style from '../styles/LoginPage.module.css'
-import Icon from '../public/logo_icon.png'
+import icon from '../public/iconlogo.png'
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -14,7 +14,7 @@ export default function LoginPage() {
             <main className='page_content'>
                 <div className={style.login_page}>
                     <div className={style.page_content}>
-                        <Image alt="logo" src={Icon} style={{width: '10em', height: '10em'}}/>
+                        <Image alt="logo" src={icon} style={{width: '10em', height: '10em'}}/>
                         <h2>Log in to unikrib</h2>
                         <form className={style.form}>
                             <div className={style.form_item}>
