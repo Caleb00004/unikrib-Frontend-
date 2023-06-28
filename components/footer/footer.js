@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <footer className={style.footer}>
             <div className={style.topHalf}>
-                <Image src={Logo} height={30} width={160}/>
+                <Image alt='logo' src={Logo} height={30} width={160}/>
                 <div class="footer-sub-cont-a">
                     <p class="foot-links" onClick={() => router.push('/apartments')}>Apartments</p>
                     <p class="foot-links" onClick={() => router.push('/product')}>Products</p>

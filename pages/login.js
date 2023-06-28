@@ -14,7 +14,7 @@ export default function LoginPage() {
             <main className='page_content'>
                 <div className={style.login_page}>
                     <div className={style.page_content}>
-                        <Image src={Icon} style={{width: '10em', height: '10em'}}/>
+                        <Image alt="logo" src={Icon} style={{width: '10em', height: '10em'}}/>
                         <h2>Log in to unikrib</h2>
                         <form className={style.form}>
                             <div className={style.form_item}>
@@ -29,7 +29,7 @@ export default function LoginPage() {
                         </form>
                     </div>
                     <p>Forgot password?</p>
-                    <p>Don't have an account? sign up <span onClick={() => router.push('/signup')} style={{cursor: 'pointer', textDecoration: 'underline', color: 'purple'}}>here</span></p>
+                    <p>Don &apos t have an account? sign up <span onClick={() => router.push('/signup')} style={{cursor: 'pointer', textDecoration: 'underline', color: 'purple'}}>here</span></p>
                 </div>
             </main>
             <Footer />

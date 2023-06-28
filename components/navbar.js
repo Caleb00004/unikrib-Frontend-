@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <nav className={Styles.navbar}>
             <div className={Styles.img_container}>
-                <Image onClick={() => router.push('/')} src={Logo} height={30} width={160}/>
+                <Image alt='logo' onClick={() => router.push('/')} src={Logo} height={30} width={160}/>
             {/* <h1 style={{color: 'white', margin: 0, padding: 0}}>The Navbar</h1> */}
             </div>
             <div className={Styles.nav_contents}>

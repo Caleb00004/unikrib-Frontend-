@@ -72,30 +72,3 @@
     border-radius: 50%;
 }
 
-.support {
-    text-align: center;
-    font-weight: 200;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    /* background-color: red; */
-}
-
-.support > h3 {
-    font-weight: 400;
-}
-
-.support > h3 > span {
-    cursor: pointer;
-    background-color: green;
-    border: 1px solid green;
-    color: white;
-    padding: 0.5em 3em 0.5em 3em;
-    border-radius: 5px; 
-    font-size: 1em;
-    transition: 0.3s;
-}
-
-.support > h3 > span:hover {
-    color: green;
-    background-color: white;
-}

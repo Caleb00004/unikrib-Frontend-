@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <main className='page_content'>
         <div className={styles.img_container}>
-          <Image src={HeroImg} width={1000} height={1000} style={{width: '100%', height: '88vh'}}/>
+          <Image alt='product-img' src={HeroImg} width={1000} height={1000} style={{width: '100%', height: '88vh'}}/>
           <div className={styles.img_text}>
             <h1>Unikrib</h1>
             <h3>Househunt online</h3>
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
           </div>
           <div id="about-sub-cont-b" data-aos="zoom-in-up" className={styles.about_section_imgContainer}>
-            <Image src={HeroImg} width={500} height={500} />
+            <Image alt='product-img' src={HeroImg} width={500} height={500} />
           </div>
         </section>
 
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
           </div>
           <div id="about-sub-cont-b" data-aos="zoom-in-up" className={styles.about_section_imgContainer}>
-            <Image src={HeroImg} width={500} height={500} />
+            <Image alt='product-img' src={HeroImg} width={500} height={500} />
           </div>
         </section>
 

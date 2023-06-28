@@ -2,10 +2,13 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
 import SearchComponent from "../components/searchComponent";
 import style from '../styles/ServicesPage.module.css'
-import HeroImg from '../public/images/product-img.jpg'
-import Image from "next/image";
+import SupportUs from "../components/supportUs/supportus";
+import Card from "../components/card/Card";
+import { useRouter } from "next/router";
 
 export default function ServicesPage() {
+    const router = useRouter()
+
     return (
         <>
             <Navbar />
@@ -14,10 +17,9 @@ export default function ServicesPage() {
                     <h2>Find service providers closet to you</h2>
                     <SearchComponent />
 
-                    <div className={style.img_container}>
-                        <Image src={HeroImg} style={{width: '20em', height: '15em'}} />
-                        <p>Are you looking to rent an apartment close to your campus without having to spend hours or days househunting? find vacant apartments <span>Here</span></p>
-                    </div>
+                    <Card />
+                    <br /><br />
+                    <SupportUs />
                 </div>
             </main>
             <Footer />

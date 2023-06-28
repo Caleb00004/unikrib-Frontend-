@@ -6,6 +6,7 @@ import friendImg from '../public/images/Group_of_friends.jpg'
 import style from '../styles/AboutPage.module.css'
 import dennisImg from '../public/images/Dennis_akinwonjowo.jpg'
 import successImg from '../public/images/success_akanbi.jpg'
+import SupportUs from "../components/supportUs/supportus";
 
 export default function AboutPage() {
 
@@ -31,11 +32,11 @@ export default function AboutPage() {
                         </div>
                         <div id="about-img-cont" className={style.top_image_container}>
                             <div data-aos="zoom-in-up">
-                                <Image src={discussImg} width={2000} height={2000}/>
+                                <Image src={discussImg} width={2000} height={2000} alt="students discussing"/>
                                 {/* <img src="images/discussing-students.jpg" /> */}
                             </div>
                             <div data-aos="zoom-in-up">
-                                <Image src={friendImg} width={2000} height={2000}/>
+                                <Image src={friendImg} width={2000} height={2000} alt="Group of friends"/>
                                 {/* <img src="images/Group of friends hanging out.jpg" /> */}
                             </div>
                         </div>
@@ -54,14 +55,14 @@ export default function AboutPage() {
 
                 <div className={style.team_container}>
                     <div class={style.team_member} data-aos="zoom-in-up">
-                        <Image src={successImg}/>
+                        <Image src={successImg} alt="success Akanbi"/>
                         <div class="name-title-cont">
                             <p class="name">Success Akanbi</p>
                             <p class="title">Cofounder and team lead</p>
                         </div>
                     </div>
                     <div class={style.team_member} data-aos="zoom-in-up">
-                        <Image src={dennisImg}/>
+                        <Image src={dennisImg} alt="Dennis Akinwojonwo"/>
                         <div class="name-title-cont">
                             <p class="name">Dennis Akinwojonwo</p>
                             <p class="title">Cofounder and tech lead</p>
@@ -69,9 +70,7 @@ export default function AboutPage() {
                     </div>   
                 </div>
 
-                <div className={style.support}>
-                    <h3>Like What we do?  <span onClick={() => router.push('/support')}>support us</span></h3>
-                </div>
+                <SupportUs />
             </main>
 
             {/* <Footer /> */}

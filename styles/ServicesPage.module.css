@@ -1,34 +1,6 @@
 .page_container {
     text-align: center;
     padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.img_container {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
-    0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgb(148, 201, 248);
-    width: 40em;
-    margin-top: 2em;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img_container > p {
-    padding-left: 0.5em;
-    text-align: left;
-    font-weight: bolder;
-    font-size: 1.1em;
-}
-
-.img_container > p > span {
-    color: red;
-    display: block;
-    padding-top: 1em;
 }
 
 
