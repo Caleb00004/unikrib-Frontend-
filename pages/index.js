@@ -70,7 +70,7 @@ export default function Home() {
                   <IoIosSettings className={styles.service_grid_icon} style={{width: 80, height: 80}} />
                   <p className={styles.text_description}>Unikrib connects students to service providers, like 
                     carpenters,electricians, plumbers, cleaners etc. and 
-                    allows them "order" these services with ease
+                    allows them order these services with ease
                   </p>
                 </div>
             </div>
