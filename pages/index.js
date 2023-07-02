@@ -10,7 +10,6 @@ import {BsFillCartFill} from 'react-icons/bs'
 import {PiPersonFill, PiHandbagFill} from 'react-icons/pi'
 import {TiSpanner} from 'react-icons/ti'
 import Footer from '../components/footer/footer'
-// import Fade from 'react-reveal/Fade'
 import {Fade} from 'react-awesome-reveal'
 
 export default function Home() {
