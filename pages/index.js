@@ -93,8 +93,8 @@ export default function Home() {
         </section>
 
         {/* REGISTER SECTION */}
+        <Fade triggerOnce={true} direction='left' distance={"10%"} duration={1500}>
         <section className={styles.about_section}>
-          <Fade triggerOnce={true} direction='right' distance={"10%"} duration={1500}>
             <div id = "about-sub-cont-a" data-aos="fade-right">
               <div id="about-text-contain" className={styles.about_text}>
                   <h1 className="text-header"> Become a unikrib vendor or agent</h1>
@@ -112,8 +112,8 @@ export default function Home() {
             <div id="about-sub-cont-b" data-aos="zoom-in-up" className={styles.about_section_imgContainer}>
               <Image alt='product-img' src={HeroImg} width={500} height={500} />
             </div>
-          </Fade>
         </section>
+        </Fade>
 
         {/* STATS SECTION */}
         <section className={styles.stats_section} id="stat-cont">
