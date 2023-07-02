@@ -14,7 +14,7 @@ export default function SearchComponent({data}) {
                     <div className={style.container_item}>
                         <div className={style.texts}>
                             <div className={style.topHalf}>
-                                {data.data.map((item) => <p>{item.title}</p>)}
+                                {data.data.map((item, i) => <p key={i}>{item.title}</p>)}
 
                                 {/* <p>select Community</p>
                                 <p>Select service provider</p> */}
@@ -22,11 +22,11 @@ export default function SearchComponent({data}) {
                             </div>
                             <hr style={{border: '2px solid blue'}}/>
                             <div className={style.bottomHalf}>
-                                {data.data.map((item) => {
+                                {data.data.map((item, i) => {
                                     return (
-                                        <select>
-                                            {item.options.map((option) => (
-                                                <option>{option}</option>
+                                        <select key={i}>
+                                            {item.options.map((option, i) => (
+                                                <option key={i}>{option}</option>
                                             ))}
                                         </select>
                                     )
@@ -63,16 +63,16 @@ export default function SearchComponent({data}) {
                     <div className={style.container_item}>
                         <div className={style.texts}>
                             <div className={style.topHalf}>
-                                {data.data.map((item) => <p>{item.title}</p>)}
+                                {data.data.map((item, i) => <p key={i}>{item.title}</p>)}
                                 <p>{data.input}</p>
                             </div>
                             <hr style={{border: '2px solid blue'}}/>
                             <div className={style.bottomHalf}>
-                                {data.data.map((item) => {
+                                {data.data.map((item, i) => {
                                     return (
-                                        <select>
-                                            {item.options.map((option) => (
-                                                <option>{option}</option>
+                                        <select key={i}>
+                                            {item.options.map((option, i) => (
+                                                <option key={i}>{option}</option>
                                             ))}
                                         </select>
                                     )
