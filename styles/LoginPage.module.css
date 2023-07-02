@@ -4,10 +4,15 @@
     /* background-color: red; */
     padding: 2em;
     text-align: center;
-    width: 30em;
+    width: 25em;
     font-weight: bolder;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
     0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page_content > img {
+    width: 10em;
+    height: 10em;
 }
 
 .page_content > h2 {
@@ -48,7 +53,25 @@
     padding-bottom: 0.5em;
 }
 
-
+@media screen and (max-width: 495px) {
+    .page_content > img {
+        width: 8em;
+        height: 8em;
+    }
+    .login_page {
+        width: 80%;
+    }
+    .login_page p {
+        font-size: 0.9em;
+    }
+    .page_content > h2 {
+        font-size: 1.3em;
+    }
+    .form_item > label {
+        font-size: 1em;
+        margin-bottom: 0.4em;
+    }   
+}
 
 
 

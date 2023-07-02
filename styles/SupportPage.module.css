@@ -49,5 +49,11 @@
     background-color: rgb(15, 82, 15);
 }
 
+@media screen and (max-width: 730px) {
+    .support_page {
+        padding-top: 2em;
+        width: 90%;
+    }    
+}
 
 

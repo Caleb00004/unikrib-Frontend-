@@ -4,9 +4,12 @@ import style from '../styles/LoginPage.module.css'
 import icon from '../public/iconlogo.png'
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useContext } from "react";
+import { appContext } from "../context/testContext";
 
 export default function LoginPage() {
     const router = useRouter()
+    const {logIn} = useContext(appContext)
 
     return (
         <>
@@ -14,7 +17,7 @@ export default function LoginPage() {
             <main className='page_content'>
                 <div className={style.login_page}>
                     <div className={style.page_content}>
-                        <Image alt="logo" src={icon} style={{width: '10em', height: '10em'}}/>
+                        <Image alt="logo" src={icon} />
                         <h2>Log in to unikrib</h2>
                         <form className={style.form}>
                             <div className={style.form_item}>
@@ -25,7 +28,7 @@ export default function LoginPage() {
                                 <label>Password</label>
                                 <input type="password" placeholder="Enter Password"/>
                             </div>
-                            <button>Log in</button>
+                            <button onClick={(e) => ( e.preventDefault(), logIn(), router.push('/'))}>Log in</button>
                         </form>
                     </div>
                     <p>Forgot password?</p>

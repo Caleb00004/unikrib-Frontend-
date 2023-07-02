@@ -25,3 +25,10 @@
     color: green;
     background-color: white;
 }
+
+@media screen and (max-width: 600px) {
+    .support > h3 > span {
+        padding: 0.5em 2em 0.5em 2em;
+        font-size: 0.9em;
+    }   
+}

@@ -7,9 +7,9 @@
 .about_text_cont{
     display: flex;
     padding: 0.5% 1em 0.5% 1em;
-    margin: 1.5em 0 0em 0;
-   
+    margin: 1.5em 0 0em 0;  
 }
+
 .about_text_cont p{
     font-size: 1em;
     font-weight: 500;
@@ -23,8 +23,7 @@
     display: inline-flex;
     background-color: #052e55a4;
     margin: 2em 0 3em 0;
-    color: #fff;
-    
+    color: #fff;  
 }
 
 .vision_txt_cont{
@@ -72,3 +71,59 @@
     border-radius: 50%;
 }
 
+
+@media screen and (max-width: 790px) {
+    .about_text_cont{
+        display: flex;
+        padding: 0.5% 0em 0.5% 0em;
+        margin: 1.5em 0 0em 0;  
+    }    
+    .about_top_half {
+        /* padding-top: 3em;
+        background-color: white;
+        text-align: center; */
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }    
+    .top_image_container {
+        margin-top: 2em;
+        /* display: flex; */
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .top_image_container > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .vision_cont{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }        
+    .vision_txt_cont{
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .vision_txt_cont p{
+        margin-top: 0em;
+        font-size: 1em;
+    }
+    .team_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        gap: 2em;
+    }
+    .team_member > img {
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+    }    
+    .team_member p {
+        padding: 0.4em;
+        margin: 0;
+    }
+}

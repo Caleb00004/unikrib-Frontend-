@@ -4,12 +4,20 @@
     align-items: center;
     background-color: black;
     color: white;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     padding-bottom: 0.3em;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
+}
+
+.phone_nav {
+    display: none;
+}
+
+.hamburger {
+    display: none;
 }
 
 .img_container {
@@ -23,15 +31,89 @@
     width: 35em;
     justify-content: space-between;
     padding-right: 2em;
+    align-items: center;
 }
 
 .nav_contents > p {
     transition: 0.3s;
     cursor: pointer;
     border-bottom: 2px solid black;
-    padding-bottom: 0.3em;
+    /* padding-bottom: 0.3em; */
 }
 
 .nav_contents > p:hover {
     border-bottom-color: white;
+}
+
+.drop_down {
+    transition: 0.4s;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: -2em;
+    width: 8em;
+    padding-top: 0.5em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    top: 3em;
+    background-color: black;
+    font-size: 1.1em;
+}
+
+.drop_down > p {
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 0;
+    padding: 1em 1.3em 1em 1.3em;
+}
+
+.drop_down > p:hover {
+    background-color: grey;
+}
+
+
+@media screen and (max-width: 790px) {
+    .nav_contents {
+        display: none;
+    }    
+
+    .navbar {
+        padding-top: 0.95em;
+        padding-bottom: 0.95em;
+
+    }
+
+    .img_container {
+        padding-left: 1em;
+        cursor: pointer;
+    }
+
+    .img_container > img {
+        /* width: 120px;
+        height: 30px; */
+    }
+    .hamburger {
+        display: flex;
+        margin-right: 1.5em;
+        cursor: pointer;
+    }
+    .phone_nav p {
+        cursor: pointer;
+    }
+    .phone_nav {
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.4s;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 95vh;
+        margin-top: 3.5em;
+    }
 }
