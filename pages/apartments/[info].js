@@ -3,7 +3,7 @@ import Footer from "../../components/footer/footer";
 import Description from "../../components/DynamicPageComponents/description";
 import DestailsCard from "../../components/DynamicPageComponents/detailscard";
 // import ImageSlider from "../../components/DynamicPageComponents/imageslider";
-import ImageSlider from "../../components/DynamicPageComponents/Imageslider";
+// import ImageSlider from "../../components/DynamicPageComponents/Imageslider";
 import Reviews from "../../components/DynamicPageComponents/reviews";
 import SecurityTips from "../../components/userProfile/SecurityTips";
 import Disclaimer from '../../components/userProfile/Disclaimer'
@@ -17,7 +17,10 @@ export default function Info() {
             <main className="page_content">
                 <div className={style.dynamicPage}>
                     <div className={style.left_section}>
-                        <ImageSlider />
+                        {/* <ImageSlider /> */}
+                        <div>
+                            <h1>ImageSlider Component</h1>
+                        </div>
                         <Description />
                         <Disclaimer />
                     </div>
