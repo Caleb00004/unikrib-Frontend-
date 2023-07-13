@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/navbar'
+import Navbar from '../components/navbar/navbar'
 import HeroImg from '../public/images/product-img.jpg'
 import { useRouter } from 'next/router'
 import {AiFillHome} from 'react-icons/ai'
@@ -11,10 +11,17 @@ import {PiPersonFill, PiHandbagFill} from 'react-icons/pi'
 import {TiSpanner} from 'react-icons/ti'
 import Footer from '../components/footer/footer'
 import {Fade} from 'react-awesome-reveal'
+import { globalState } from '../api_feature/apiSlice'
+import { appContext } from '../context/testContext'
+import { useContext } from 'react'
+
 
 export default function Home() {
   const router = useRouter()
-
+  const {statsData} = useContext(appContext)
+  console.log(statsData)
+  console.log(globalState)
+  
   return (
     <>
       <Navbar />
@@ -119,23 +126,23 @@ export default function Home() {
         <section className={styles.stats_section} id="stat-cont">
             <div id="stat-sub-cont">
                 <AiFillHome />
-                <p className="values" id="stat1">0</p>
+                <p className="values" id="stat1">{statsData.ap}</p>
                 <p className="groups">Apartments</p>
             </div>
             <div id="stat-sub-cont">
                 <PiPersonFill />
-                <p className="values" id="stat2">0</p>
+                <p className="values" id="stat2">{statsData.agent}</p>
                 <p className="groups">Agents</p> 
             </div>
             <div id="stat-sub-cont">
                 <PiHandbagFill />
-                <p className="values" id="stat3">0</p>
+                <p className="values" id="stat3">{statsData.vendor}</p>
                 <p className="groups">Vendors</p>
             </div>
             <div id="stat-sub-cont">
                 <TiSpanner />
-                <p className="values" id="stat4">0</p>
-                <p className="groups">Service providers</p> 
+                <p className="values" id="stat4">{statsData.sp}</p>
+                <p className="groups">Service Providers</p> 
             </div>
         </section>
       </main>

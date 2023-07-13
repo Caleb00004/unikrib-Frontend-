@@ -1,9 +1,9 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer/footer";
-import SearchComponent from "../components/searchComponent";
-import Card from "../components/card/Card";
-import style from '../styles/ProductPage.module.css'
-import SupportUs from "../components/supportUs/supportus";
+import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
+import SearchComponent from "../../components/searchcomponent/searchComponent";
+import Card from "../../components/card/Card";
+import style from '../../styles/ProductPage.module.css'
+import SupportUs from "../../components/supportUs/supportus";
 
 const searhData = {
     type: 'product',

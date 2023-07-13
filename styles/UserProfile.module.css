@@ -23,8 +23,7 @@
 
 .single_container {
     flex: 1.2;
-    background-color: #1a60a1e1;
-    padding: 1em;
+    padding: 0em;
 }
 
 /* USER CARD */
@@ -71,12 +70,17 @@
 }
 
 .disclaimer_container > p {
-    font-size: clamp(0.9em, 1.2vw, 1.3em);
+    font-size: clamp(0.9em, 1.1vw, 1.3em);
 }
 
 /* SECURITY TIPS */
 .security_container {
     color: white;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 1.5em;
+    padding-right: 1em; 
+    background-color: #0c3a8094;
 }
 
 .security_container > h3 {

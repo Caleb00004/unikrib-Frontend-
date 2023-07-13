@@ -1,0 +1,105 @@
+.page_container {
+    display: flex;
+    width: 57em;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.add_review_container {
+    /* background-color: ; */
+    border-radius: 10px;
+    background-color: rgb(78, 113, 155);
+    /* background: linear-gradient(217deg, rgba(20, 105, 155, 0.956), rgba(139, 137, 137, 0.109)70.71%), linear-gradient(127deg, rgba(90, 169, 221, 0.915), rgba(102, 102, 104, 0.068)70.71%), linear-gradient(336deg, rgba(110, 171, 245, 0.604), rgba(97, 97, 100, 0.456)70.71%); */
+}
+
+.add_review_container {
+    flex: 1;
+    padding: 1em 1.5em;
+    color: white;
+}
+
+.add_review_container > h4 {
+    font-size: 1.4em;
+}
+
+.reviews_list {
+    flex: 1.5;
+}
+
+.add_review_container form {
+    text-align: left;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_item > label {
+    margin-bottom: 1em;
+}
+
+.form_item > select  {
+    margin-left: 2em;
+    border: none;
+    border-top: 2px solid blue;
+    height: 2em;
+}
+
+.form_item > input {
+    margin-left: 2em;
+    border: none;
+    border-top: 2px solid blue;
+    height: 8em;
+}
+
+.page_container button {
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #17960cf1;
+    color: white;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 2.5em;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.page_container button:hover {
+    background-color: #0c4b05f1;
+}
+
+@media screen and (max-width: 988px) {
+    .page_container {
+        width: 90%;
+    }
+    .reviews_list {
+        flex: 1.2;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .page_container {
+        flex-direction: column;
+        margin-top: 6em;
+        margin-bottom: 5em;
+    }
+    .form_item > select {
+        margin-left: 1em;
+    }
+
+    .form_item > input {
+        margin-left: 1em;
+    }
+    .add_review_container {
+        padding: 1em 1em;
+    }
+}

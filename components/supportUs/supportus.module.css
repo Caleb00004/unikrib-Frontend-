@@ -31,4 +31,8 @@
         padding: 0.5em 2em 0.5em 2em;
         font-size: 0.9em;
     }   
+    .support {
+        margin-top: 0em;
+        margin-bottom: 3em;
+    }    
 }

@@ -1,11 +1,9 @@
 import style from './searchComponent.module.css'
+import ResultCard from '../resultcard/ResultCard'
 
 
 export default function SearchComponent({data}) {
     console.log(data)
-    // const mapFilterData = data.data.map(() => {
-    //     return ()
-    // })
 
     if ( data.type != 'product') {
         return (
@@ -32,19 +30,6 @@ export default function SearchComponent({data}) {
                                     )
                                 })}
 
-                                {/* <select>
-                                    <option>All communities</option>
-                                    <option>park</option>
-                                    <option>minute</option>
-                                    <option>All communities</option>
-                                </select>
-                                <select>
-                                    <option>All communities</option>
-                                    <option>All communities</option>
-                                    <option>All communities</option>
-                                    <option>All communities</option>
-                                </select> */}
-
                             </div>
                         </div>
                         <button>Search</button>
@@ -54,6 +39,8 @@ export default function SearchComponent({data}) {
                 <div className={style.showing_results} >
                     <h3>showing results 1 - 2 out of 2</h3>
                 </div>
+
+                <ResultCard type={data.type}/>
             </div>
         )
     } else {
@@ -87,6 +74,8 @@ export default function SearchComponent({data}) {
                 <div className={style.showing_results} >
                     <h3>showing results 1 - 2 out of 2</h3>
                 </div>
+
+                <ResultCard type={data.type}/>
             </div>
         )
     }

@@ -1,9 +1,10 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer/footer";
-import style from '../styles/ApartmentPage.module.css'
-import Card from "../components/card/Card";
-import SearchComponent from "../components/searchComponent";
-import SupportUs from "../components/supportUs/supportus";
+import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
+import style from '../../styles/ApartmentPage.module.css'
+import Card from "../../components/card/Card";
+import SearchComponent from "../../components/searchcomponent/searchComponent";
+import SupportUs from "../../components/supportUs/supportus";
+import ResultCard from "../../components/resultcard/ResultCard";
 
 const searhData = {
     type: 'apartment',
@@ -35,9 +36,8 @@ export default function ApartmentsPage() {
                 <div className={style.page_container}>
                     <h1>Lets find you an apartment</h1>
                     <SearchComponent data={searhData}/>
-
+  
                     <Card />
-
                     <SupportUs />
                 </div>
             </main>

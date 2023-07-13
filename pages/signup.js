@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import style from '../styles/SignupPage.module.css'
 import {FcGoogle} from 'react-icons/fc'

@@ -1,0 +1,150 @@
+.dynamicPage {
+    display: flex;
+    margin-top: 7em;
+    width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2em;
+}
+
+.left_section {
+    flex: 1.5;
+    /* background-color: red; */
+}
+
+.right_section {
+    flex: 1;
+    /* background-color: purple; */
+}
+
+.details_card {
+    padding: 0.7em;
+    background-color: rgb(202, 227, 248);
+}
+.image_container {
+    display: flex;
+    gap: 1em;
+    position: relative;
+}
+
+.image_container > img {
+    height: 8em;
+    width: 8em;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.image_texts > p{
+    margin: 0;
+    padding: 0;
+}
+
+.image_container_icon {
+    position: absolute;
+    top: 0.5em;
+    right: 2em;
+}
+
+.user_btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.7em;
+}
+
+.user_btnContainer > button {
+    border: none;
+    color: white;
+    padding: 0.7em;
+    background-color: blue;
+}
+
+/* REVIEWS SECTION */
+.review_container {
+    
+}
+
+.review_container > a > p {
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+}
+
+.no_reviews {
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.3em 1em 0.3em 1em;
+    background-color: rgb(165, 235, 165);
+}
+
+/* REPORTS SECTION */
+.report_container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #F3EEEE;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.report_container button {
+    cursor: pointer;
+    background-color: #E20F0F;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.9em 4em 0.9em 4em;
+}
+
+/* DESCRIPTION CONTAINER */
+.description_container {
+    margin-bottom: 1em;
+}
+
+.description_container > h2 {
+    color: #172074;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.description_container > p {
+    font-size: 1.3em;
+}
+.description_container .price {
+    color: #52ac09;
+    font-weight: bolder;
+}
+
+.apartment_features {
+    background-color: #0e9215a4;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.apartment_features > h3 {
+    font-weight: 500;
+    padding: 0;
+    margin-top: 0.8em;
+}
+
+@media screen and (max-width: 1180px) {
+    .dynamicPage {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .dynamicPage {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .image_container > img {
+        height: 6em;
+        width: 6em;
+    }
+}
+
+
