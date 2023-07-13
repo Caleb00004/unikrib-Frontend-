@@ -3,7 +3,8 @@ import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import SupportUs from '../../components/supportUs/supportus'
 import DestailsCard from "../../components/DynamicPageComponents/detailscard";
-import ImageSlider from "../../components/DynamicPageComponents/Imageslider";
+// import ImageSlider from "../../components/DynamicPageComponents/Imageslider";
+import ImageSlider from '../../components/DynamicPageComponents/Imageslider';
 import Reviews from "../../components/DynamicPageComponents/reviews";
 import SecurityTips from "../../components/userProfile/SecurityTips";
 import Disclaimer from '../../components/userProfile/Disclaimer'

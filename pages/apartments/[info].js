@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import Description from "../../components/DynamicPageComponents/description";
 import DestailsCard from "../../components/DynamicPageComponents/detailscard";
+// import ImageSlider from "../../components/DynamicPageComponents/imageslider";
 import ImageSlider from "../../components/DynamicPageComponents/Imageslider";
 import Reviews from "../../components/DynamicPageComponents/reviews";
 import SecurityTips from "../../components/userProfile/SecurityTips";
