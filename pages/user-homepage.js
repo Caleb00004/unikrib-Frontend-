@@ -1,12 +1,12 @@
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import style from '../styles/UserProfile.module.css'
-import SupportUs from "../components/supportUs/supportus"
-import UserCard from "../components/userHomepage/UserCard"
-import Disclaimer from "../components/userHomepage/Disclaimer"
-import SecurityTips from "../components/userHomepage/SecurityTips"
-import { useGetUserProfileQuery } from "../api_feature/apiSlice"
-import { globalState } from "../api_feature/apiSlice"
+// import SupportUs from "../components/supportUs/supportus"
+// import UserCard from "../components/userHomepage/UserCard"
+// import Disclaimer from "../components/userHomepage/Disclaimer"
+// import SecurityTips from "../components/userHomepage/SecurityTips"
+// import { useGetUserProfileQuery } from "../api_feature/apiSlice"
+// import { globalState } from "../api_feature/apiSlice"
 
 
 export default function UserHomepage() {
