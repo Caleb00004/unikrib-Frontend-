@@ -6,8 +6,8 @@ import DestailsCard from "../../components/DynamicPageComponents/detailscard";
 // import ImageSlider from "../../components/DynamicPageComponents/Imageslider";
 // import ImageSlider from '../../components/DynamicPageComponents/Imageslider';
 import Reviews from "../../components/DynamicPageComponents/reviews";
-import SecurityTips from "../../components/userProfile/SecurityTips";
-import Disclaimer from '../../components/userProfile/Disclaimer'
+import SecurityTips from "../../components/userHomepage/SecurityTips";
+import Disclaimer from '../../components/userHomepage/Disclaimer'
 import Report from "../../components/DynamicPageComponents/report";
 
 export default function Info() {
