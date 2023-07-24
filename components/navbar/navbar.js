@@ -70,7 +70,7 @@ export default function Navbar() {
                         <div style={{position: 'relative'}}>
                             <p onClick={handleDropDown} style={{display:'flex', alignItems: 'center', cursor: 'pointer'}}><BsPersonFill color='white' style={{width: 25, height: 25}}/> <AiFillCaretDown style={{width: 10, height: 10}} /></p>
                             <div ref={dropDownRef} className={style.drop_down}>
-                                <Link href='/userprofile' ><p>Profile</p></Link>
+                                <Link href='/user-homepage' ><p>Profile</p></Link>
                                 <Link href='#'> <p>Edit Proile</p> </Link>
                                 <Link href='#'> <p>Help</p> </Link>
                                 <p onClick={() => handleLogout()}>Logout</p>
@@ -92,7 +92,7 @@ export default function Navbar() {
                 <Link href='/services'> <p id={pathName == '/services' && 'active-nav'} >Services</p> </Link>
                 {loggedIn ? 
                         <>
-                            <Link href='/userprofile' ><p>Profile</p></Link>
+                            <Link href='/user-homepage' ><p>Profile</p></Link>
                             <Link href='#'> <p>Edit Proile</p> </Link>
                             <Link href='#'> <p>Help</p> </Link>
                             <p onClick={() => handleLogout()}>Logout</p>

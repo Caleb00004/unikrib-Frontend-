@@ -18,9 +18,25 @@ export const apiSlice = createApi({
                 credentials: 'include',
                 headers: {
                     // Authorization: 'unikrib f2906ed9-bc6f-4ee0-8be4-ce9928352f3e'
-                    Authorization: `unikrib ${globalState.authorizationToken}`
+                    Authorization: `Unikrib ${globalState.authorizationToken}`
                 },
             }),
+        }),
+        getUserProfile: builder.query({
+            query: () => ({
+                url: '/user/profile',
+                method: 'GET',
+                // credentials: 'include',
+                headers: {
+                    // Authorization: 'unikrib f2906ed9-bc6f-4ee0-8be4-ce9928352f3e'
+                    Authorization: `Unikrib ${globalState.authorizationToken}`
+                },
+            }),
+            transformResponse: res => {
+                console.log(res)
+                globalState.currentUser = res
+                return res
+            }
         }),
         getAddUser: builder.query({
             query: (user) => {{
@@ -71,5 +87,6 @@ export const {
     useGetLogInMutation,
     useGetLogOutMutation,
     useGetReviewsQuery,
+    useGetUserProfileQuery
 } = apiSlice
 

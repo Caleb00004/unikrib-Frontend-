@@ -1,19 +1,18 @@
-.page_content {
+.page_container {
     width: 25em;
     margin: 7em auto 3em auto;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
-    0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+        0 6px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 2em;
     text-align: center;
     font-weight: bolder;
-    position: relative;
 }
 
-.page_content > p {
+.page_container>p {
     font-weight: 600;
 }
 
-.page_content > p > span {
+.page_container>p>span {
     color: blue;
     cursor: pointer;
 }
@@ -21,8 +20,6 @@
 .form {
     /* background-color: red; */
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .form_item {
@@ -39,12 +36,13 @@
     top: 2.3em;
 }
 
-.form_item > label {
+.form_item>label {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
 }
 
-.form_item input, .form_item select {
+.form_item input,
+.form_item select {
     margin-left: 1em;
     border: none;
     border-bottom: 2px solid #2b49ae;
@@ -57,7 +55,7 @@
     background-color: green;
     border: 1px solid green;
     transition: 0.3s;
-    color: white;    
+    color: white;
     cursor: pointer;
     padding: 0.8em 5em 0.8em 5em;
     border-radius: 5px;
@@ -68,44 +66,33 @@
     color: green;
 }
 
-.page_content > button {
+.page_container>button {
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
     padding: 1em;
     background-color: white;
     border: none;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 
-    0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+        0 6px 10px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page_content > button > span {
+.page_container>button>span {
     padding-left: 0.4em;
 }
 
-.previewImage {
-    border: 1px solid rgb(141, 141, 141);
-    padding: 1em;
-    width: 100%;
-    height: min-content;
-    margin-top: 1.5em;
-}
-
 @media screen and (max-width: 495px) {
-    .page_content {
+    .page_container {
         width: 85%;
         padding-left: 1em;
         padding-right: 1em;
     }
-    .page_content > p {
+
+    .page_container>p {
         font-size: 0.9em;
         font-weight: 600;
     }
 }
-
-
-
-

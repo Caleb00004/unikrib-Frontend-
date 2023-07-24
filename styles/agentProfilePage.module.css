@@ -1,0 +1,30 @@
+.flex_container {
+    display: flex;
+        justify-content: center;
+        width: 65em;
+        gap: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5em;
+        margin-bottom: 10em;
+}
+
+.double_container {
+    flex: 1;
+}
+
+.single_container {
+    flex: 3;
+}
+
+.reviews_container {
+    background-color: #F8FCF8;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.reviews_container p {
+    background-color: #AEF3B7;
+    padding: 0.5em;
+}
+
