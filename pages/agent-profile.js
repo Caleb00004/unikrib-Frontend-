@@ -5,8 +5,10 @@ import UserCard from "../components/userHomepage/UserCard"
 import Disclaimer from "../components/userHomepage/Disclaimer"
 import SecurityTips from "../components/userHomepage/SecurityTips"
 import SupportUs from "../components/supportUs/supportus"
+import { globalState } from "../api_feature/apiSlice"
 
 export default function AgentProfile() {
+    const {currentUser} = globalState
     return (
         <>
             <Navbar />
@@ -14,7 +16,7 @@ export default function AgentProfile() {
                 <div className={style.page_content}>
                     <div className={style.flex_container}>
                         <div className={style.double_container}>
-                            <UserCard />
+                            <UserCard data={currentUser}/>
                             <div className={style.reviews_container}>
                                 <h3>Latest Reviews</h3>
                                 <div>
